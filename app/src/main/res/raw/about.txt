@@ -1,0 +1,7 @@
+<html><head><body>
+<h2>Android Gamers' Web</h2>
+<h3>Version 1.1</h3>
+<br/>Copyright &copy; 2016 Gamers' Web.
+<br/>All Rights Reserved.
+<br/><br/>Created by Guy Sagy. <a href= "mailto:guysagy@hotmail.com?subject=Gamer's Web Android app" >Click to email Guy.</a>
+</body></head></html>

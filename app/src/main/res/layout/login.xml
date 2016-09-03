@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="@android:color/white">
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/edit_text"
+		android:addStatesFromChildren="true"
+		android:padding="0dp"
+		android:gravity="center_vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+		<TextView
+			android:text="@string/str_Username"
+			android:textColor="@color/settings_text_title"
+			android:textSize="@dimen/account_settings_text_size"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="3dp"/>
+		<EditText
+			android:id="@+id/EditText_Login_Username"
+			android:inputType="text"
+			android:textColor="@color/settings_text"
+			android:textSize="@dimen/account_settings_text_size"				
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:singleLine="true"
+			android:maxLength="20"
+			android:paddingLeft="4dp"
+			android:background="@null"
+            android:focusable="true" />
+    </LinearLayout>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/edit_text"
+		android:addStatesFromChildren="true"
+		android:padding="0dp"
+		android:gravity="center_vertical">
+		<TextView
+			android:text="@string/str_Password"
+			android:textColor="@color/settings_text_title"
+			android:textSize="@dimen/account_settings_text_size"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="3dp"/>
+		<EditText
+			android:id="@+id/EditText_Login_Password"
+			android:textColor="@color/settings_text"
+			android:inputType="textPassword"	
+			android:textSize="@dimen/account_settings_text_size"				
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:singleLine="true"
+			android:maxLength="20"
+			android:paddingLeft="4dp"
+			android:background="@null"/>	
+	</LinearLayout>		
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/edit_text"
+		android:padding="0dp">					
+		<Button
+			android:id="@+id/Button_OkLoginAccount"
+			android:text="@string/str_Login"
+			android:layout_weight="1"
+			android:textColor="@color/settings_text_title"
+			android:textSize="@dimen/account_settings_text_size"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="3dp"/>
+		<Button
+			android:id="@+id/Button_CancelLoginAccount"
+			android:text="Cancel"
+			android:layout_weight="1"					
+			android:textColor="@color/settings_text_title"
+			android:textSize="@dimen/account_settings_text_size"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="3dp"/>
+	</LinearLayout>		
+	
+</LinearLayout>

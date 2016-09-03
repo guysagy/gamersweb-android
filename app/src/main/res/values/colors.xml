@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="activity_title_text">#000000</color>
+	<color name="activity_title_background">#00EA00</color>
+
+    <color name="scores_table_title">#FF0000</color>
+    <color name="scores_table_text">#0000FF</color>
+
+    <color name="version_text">#f0f0f0</color>
+    <color name="version_background">#f0f0f0</color>
+
+    <color name="menu_title">#FFFFFFFF</color>
+    <color name="menu_item">#FFFFFFFF</color>
+    <color name="menu_background">#FF000000</color> <!--  black -->
+    
+    <color name="settings_text">#000000</color>
+    <color name="settings_text_title">#000000</color>
+    <color name="settings_background">#FFFFFF</color>
+    <color name="settings_text_error">#FF0000</color>
+    
+    <color name="game_text">#FF000000</color>
+</resources>

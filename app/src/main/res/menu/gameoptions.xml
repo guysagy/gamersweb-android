@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item 
+  		android:id="@+id/menu_item_welcome"
+  		android:title="@string/menu_item_welcome"
+  		android:icon="@android:drawable/ic_menu_view"
+  		/> 
+  		
+  <item 
+  		android:id="@+id/menu_item_games"
+  		android:title="@string/menu_item_games"
+  		android:icon="@android:drawable/ic_menu_myplaces"
+  		>
+  		<menu>        
+            <item android:id="@+id/menu_item_tictactoe"
+                	android:title="@string/menu_item_tictactoe"/>
+        </menu>
+</item>          		  
+ <item 
+  		android:id="@+id/menu_item_scores"
+  		android:title="@string/menu_item_scores"
+  		android:icon="@android:drawable/ic_menu_gallery"
+  		>
+  		<menu>        
+            <item android:id="@+id/menu_item_scores_by_name"
+                	android:title="@string/menu_item_scores_by_name"/>
+            <item android:id="@+id/menu_item_scores_by_score"
+                	android:title="@string/menu_item_scores_by_score"/>                   	
+        </menu>
+ </item>  		  
+ <item 
+  		android:id="@+id/menu_item_main_menu"
+  		android:title="@string/menu_item_main_menu"
+  		android:icon="@android:drawable/ic_menu_agenda"
+  		/> 
+  <item 
+  		android:id="@+id/menu_item_account"
+  		android:title="@string/menu_item_account"
+  		android:icon="@android:drawable/ic_menu_preferences"
+  		>
+  		<menu>        
+            <item android:id="@+id/menu_item_account_login"
+                	android:title="Account Login/out"/>
+            <item android:id="@+id/menu_item_account_create"
+                	android:title="@string/menu_item_account_create"/>
+            <item android:id="@+id/menu_item_account_update"
+                	android:title="@string/menu_item_account_update"/>   
+            <item android:id="@+id/menu_item_account_delete"
+                	android:title="@string/menu_item_account_delete"/>                	             	
+        </menu>
+   </item>
+   <item 
+  		android:id="@+id/menu_item_about"
+  		android:title="@string/menu_item_about"
+  		android:icon="@android:drawable/ic_menu_info_details"
+  		>
+        <item android:id="@+id/menu_item_info"
+            	android:title="@string/menu_item_info"/>  	
+	 		
+  </item>  	
+</menu>

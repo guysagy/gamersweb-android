@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.guysagy.gamersweb" >
+
+    <application android:label="@string/app_name" android:icon="@drawable/app_icon" android:launchMode="singleTask">
+        <activity android:name="com.guysagy.gamersweb.ui.activities.WelcomeScreenActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.guysagy.gamersweb.ui.activities.MainMenuActivity" android:label="@string/app_name" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.guysagy.gamersweb.ui.activities.AboutActivity" android:label="@string/app_name" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.guysagy.gamersweb.ui.activities.DeleteUserAccountActivity" android:label="@string/app_name" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.guysagy.gamersweb.ui.activities.CreateUserAccountActivity" android:label="@string/app_name" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.guysagy.gamersweb.ui.activities.UpdateUserAccountActivity" android:label="@string/app_name" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.guysagy.gamersweb.ui.activities.LoginUserAccountActivity" android:label="@string/app_name" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.guysagy.gamersweb.ui.activities.ScoresActivity" android:label="@string/app_name" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.guysagy.gamersweb.ui.activities.TicTacToeActivity" android:label="@string/app_name" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <!-- For an intent to pass the category test, every category in the Intent object must match a category
+                in the filter. The filter can list additional categories, but it cannot omit any that are in the intent.
+                In principle, therefore, an Intent object with no categories should always pass this test, regardless of
+                what's in the filter. That's mostly true. However, with one exception, Android treats all implicit intents
+                passed to startActivity() as if they contained at least one category:
+                "android.intent.category.DEFAULT" (the CATEGORY_DEFAULT constant).
+                Therefore, activities that are willing to receive implicit intents must include
+                "android.intent.category.DEFAULT" in their intent filters.
+                (Filters with "android.intent.action.MAIN" and "android.intent.category.LAUNCHER" settings are the exception.
+                They mark activities that begin new tasks and that are represented on the launcher screen.
+                They can include "android.intent.category.DEFAULT" in the list of categories, but don't need to.)
+                 -->
+                <action android:name="com.guysagy.GAMES.TICTACTOE"/>
+                <category android:name="com.guysagy.GAMES"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
