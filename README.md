@@ -1,5 +1,3 @@
-gamersweb
-
 My little Android app
 
 An Android Java SDK app - with the stated purpose of exercising the development. 
