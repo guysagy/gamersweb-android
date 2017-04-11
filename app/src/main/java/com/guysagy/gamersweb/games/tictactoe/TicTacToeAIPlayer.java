@@ -10,6 +10,11 @@ final class TicTacToeAIPlayer extends AIPlayer
 {
     public void makeMove()
     {
+        //
+        // TODO: Implement next move logic using recursion.
+        // The following implementation is just a quick and dirty solution, as the AI is not the main purpose of this web app.
+        //
+
         Board board = mGame.getBoard();
         Location location = new TicTacToeLocation();
         int moveTo = -1;
@@ -27,7 +32,7 @@ final class TicTacToeAIPlayer extends AIPlayer
         
         // Check if need to block other (human) player.
         if (moveTo == -1)
-        {		
+        {
             TicTacToePlayer otherPlayer = new TicTacToePlayer();
             TicTacToePlayerType otherPlayerType = (getType() == TicTacToePlayerType.X) ? TicTacToePlayerType.O : TicTacToePlayerType.X;
             otherPlayer.setType(otherPlayerType);
@@ -41,13 +46,8 @@ final class TicTacToeAIPlayer extends AIPlayer
                     moveTo = i;
                     break;
                 }
-            }		
+            }
         }
-
-        //
-        // TODO: At this point, implement next move logic using recursion.
-        // The following implementation is just a quick and dirty solution, as the AI is not the main purpose of this app.
-        //
 
         // Put in center.
         if (moveTo == -1)
@@ -99,7 +99,7 @@ final class TicTacToeAIPlayer extends AIPlayer
         } 
         catch (InterruptedException e) 
         {
-        }		
+        }
         
         Message moveMessage = new Message();
         Bundle moveData = new Bundle();
@@ -135,5 +135,5 @@ final class TicTacToeAIPlayer extends AIPlayer
 
         final TicTacToeAIPlayer other = (TicTacToeAIPlayer)obj;
         return (this.getName() == other.getName() && this.getType() == other.getType());
-    }	
+    }
 }

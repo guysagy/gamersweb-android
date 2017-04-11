@@ -14,30 +14,30 @@ final class TicTacToeRules implements Rules
     private TicTacToeRules()
     {
     }
-    
+
     static TicTacToeRules getInstance()
     {
         if (mRules == null)
             mRules = new TicTacToeRules();
         return mRules;
     }
-    
+
     public boolean isMoveLegal(Move move)
     {
-    	// TODO: remove the double calls for getLocation/Board.
+        // TODO: remove the double calls for getLocation/Board.
         if (move.getPlayer() == null || move.getBoard() == null || move.getLocation() == null)
             return false;
-        
+
         Location location = move.getLocation();
         Board board = (TicTacToeBoard)(move.getBoard());
         return !board.isLocationOccupied(location);
     }
-    
+
     public Player getNextPlayer(ArrayList<Player> players, Player currentPlayer)
     {
         return (currentPlayer.getType() == TicTacToePlayerType.X) ? (TicTacToeAIPlayer)players.get(1) : (TicTacToePlayer)players.get(0);
     }
-    
+
     public ArrayList<Player> createGamePlayers()
     {
         // Player index 0 is always 'X'.
@@ -49,7 +49,7 @@ final class TicTacToeRules implements Rules
         players.add(player);
         return players;
     }
-    
+
     public boolean isGameDraw(Board board)
     {
         int[] winningStroke = new int[3];
@@ -67,7 +67,7 @@ final class TicTacToeRules implements Rules
         }
         return false;
     }
-    
+
     public boolean isGameWin(Board board, int[] winningStroke)
     {
         return isBoardLineComplete(board, 1,2,3, winningStroke)
@@ -79,9 +79,8 @@ final class TicTacToeRules implements Rules
                 || isBoardLineComplete(board, 1,5,9, winningStroke)
                 || isBoardLineComplete(board, 3,5,7, winningStroke);
     }
-    
 
-    
+    // winningStroke is an out parameter returning the locations of the winning stroke.
     private boolean isBoardLineComplete(Board board, int location1, int location2, int location3, int[] winningStroke)
     {
         TicTacToeLocation gameLocation1 = new TicTacToeLocation(location1);
@@ -102,7 +101,7 @@ final class TicTacToeRules implements Rules
                 return true;
             }
         }
-        
+
         return false;
     }
 }
